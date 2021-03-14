@@ -1,0 +1,34 @@
+#create a variable to control the loop
+keep_going = 'y'
+
+commissions = {
+    'commission_least': ['economy', 100],
+    'commission_mediate': ['standard', 200], 
+    'commission_high': ['luxury', 300]
+    }
+
+#calculate a series of commissions:
+while keep_going == 'y':
+    #get the number of each type of car
+    sales = int(input('Enter the number of types of cars sold: '))
+    comm_rate = float(input('Enter the rate of commisson: '))
+
+#calculate the commission
+    commission = sales * comm_rate
+    if sales >= 10:
+        print('Your commission is: $%.2f'% commission)
+    elif sales <= 9:
+        print(commissions['commission_high'])
+    elif sales == 5:
+        print(commissions['commission_mediate'])
+    else:  
+        print(commissions['commission_least'])
+                
+            
+
+#Display the commission
+    #print('The commission is $%.2f'% commission)
+
+    #see if the user wants to do another one:
+keep_going = raw_input('Do you want to calculate another? '+ \
+'commission(Enter y for yes): ')
