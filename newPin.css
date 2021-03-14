@@ -1,0 +1,57 @@
+/*horizontal navigation bar for Checkers kra site*/
+.navbar{background-color: red;}
+.nav-link-active {
+    color: white;
+}
+.nav-link {color: black;}
+li a:hover {
+    background-color: rgba(181, 193, 201, 0.3);
+    color: rgb(204, 200, 200);
+}
+#navbar-brand {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-item-dropdown:hover .dropdown-menu{
+    display: block;
+}
+.nav-item-dropdown{
+    position: relative;
+}
+.dropdown-menu a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(181, 193, 201, 0.3);
+}
+
+.container-registration {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 55%;
+    background-color: black;
+    color: white;
+}
+
+h4{text-align: center;}
+
+b {color: red;}
+
+.flex-register-container {
+    border: 1px solid black;
+    text-align: left;
+    background-color: rgb(231, 227, 227);
+    padding-top: 5px;
+    padding-left: 20px;
+    color: black;
+}
+select {padding-left: 10px;}
+.center {
+    float: right;
+}
+.buttons {
+    padding-left: 580px;
+    padding-top: 10px;
+}

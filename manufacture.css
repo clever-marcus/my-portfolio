@@ -1,0 +1,69 @@
+.navbar{background-color: red;}
+.nav-link-active {
+    color: white;
+}
+.nav-link {color: black;}
+li a:hover {
+    background-color: rgba(181, 193, 201, 0.3);
+    color: rgb(204, 200, 200);
+}
+#navbar-brand {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*to align the kra logo*/
+.center {
+    float: right;
+}
+b, p {
+    color: red;
+}
+h4{text-align: center;}
+
+/*Input fields*/
+input[type=text], input[type=number], select{
+    border: none;
+    width: 30%;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #f1f1f1;
+}
+input[type=date]{
+    border: none;
+    width: 20%;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #f1f1f1;
+}
+input[type=email]{
+    border: none;
+    padding: 5px;
+    display: inline-block;
+    background: #f1f1f1;
+    width: 50%;
+}
+
+#building, #city, #town {
+    padding-left: 80px;
+}
+#address {padding-left: 20px;}
+
+select{
+    
+    justify-content: space-around;
+}
+
+body {
+    padding-bottom: 50px;
+}
+.application-container {
+    border: 1px solid black;
+    width: 60%;
+    margin: 0 auto;
+}
+.flex-container-section-A, .flex-container-section-B{
+    border: 2px solid black;
+}

@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign Up</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="kra_signup.css">
+</head>
+<body>
+    
+    <form class="Sign-kra animate" action="/action_page.php" method="GET">
+        <div class="sign-container">
+            <p><strong>Please Fill the Details below to Sign Up</strong></p>
+            <small><strong>All fields marked with <b>*</b> are mandatory</strong></small>
+            
+            <div class="input-group mb-3" id="names">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Your Names <b>*</b></span>
+                </div>
+                <input type="text" class="form-control" placeholder="First Name">
+                <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+
+            <div class="input-group mb-3">
+                <label for="email">Email Address<b>*</b></label>
+                <input type="email" class="form-control" placeholder="Your Email" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">@example.com</span>
+                    </div>
+            </div>
+            <label for="idNumber">ID Number<b>*</b></label>
+            <input type="number" class="form-control" placeholder="" required>
+            <div>
+                <label for="psw">Create Password<b>*</b></label>
+                <input type="password" class="form-control" placeholder="" required>
+            </div>
+            
+            <div>
+                <label for="psw-repeat">Confirm Password<b>*</b></label>
+                <input type="password" class="form-control" placeholder="" required>
+            </div>
+            <div><input type="checkbox" name="check"> Check me<b>*</b></div>
+            
+            
+            <div class="buttons">
+                <span id="button1">
+                    <button onclick="userDetails()" type="submit" class="btn btn-primary" id="signupbtn">Sign Up</button>
+                </span>
+                <span id="button2">
+                    <button type="button" class="btn btn-danger" id="cancelbtn">Cancel</button>
+                </span>
+            </div>
+        </div>
+    </form>
+        
+    
+    <script src="kraSignup.js"></script>
+</body>
+</html>

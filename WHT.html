@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Checker</title>
+    <link rel="stylesheet" href="WHT.css">
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar">
+        <!--navbar content-->
+        <p id="navbar-brand">Welcome to Itax online service area</p>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="C:\Users\Marcus\Desktop\javascript\practice_css\kra.HTML"><strong>Home</strong></a>
+          </li>
+        </ul>
+    
+        <ul class="nav">
+          <li class="nav-item-dropdown">
+            <a class="nav-link dropdown-toggle" href="kra.HTML" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Checkers</strong></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="PINchecker.html">PIN Checker</a>
+              <a class="dropdown-item" href="TCC.html">TCC/Exemption Checker</a>
+              <a class="dropdown-item" href="WHT.html">WHT Checker</a>
+              <a class="dropdown-item" href="agent.html">Agent Checker</a>
+              <a class="dropdown-item" href="consult.html">Status Checker</a>
+              <a class="dropdown-item" href="unit.html">Control Unit Checker</a>
+            </div>
+          </li>
+        </ul>
+    
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href='C:\Users\Marcus\Desktop\javascript\practice_css\Faqs.HTML'><strong>FAQS</strong></a>
+          </li>
+        </ul>
+    
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href='C:\Users\Marcus\Desktop\javascript\practice_css\Forms.HTML'><strong>FORMS</strong></a>
+          </li>
+        </ul>
+    
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href='C:\Users\Marcus\Desktop\javascript\practice_css\reportProblem.HTML'><strong>Report A Problem</strong></a>
+          </li>
+        </ul>
+    
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href='C:\Users\Marcus\Desktop\javascript\practice_css\contact.html'><strong>Contact Us</strong></a>
+          </li>
+        </ul>
+    
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href='https://www.kra.go.ke/en/'><strong>Online Help</strong></a>
+          </li>
+        </ul>
+    
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href='C:\Users\Marcus\Desktop\javascript\practice_css\videos.html'><strong>iTax Videos</strong></a>
+          </li>
+        </ul>
+        
+      </nav>
+     
+    <div class="images">
+        <img src="data:image/png;base64,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" alt="">
+        <img src="https://i1.wp.com/kenyanwallstreet.com/wp-content/uploads/2020/01/itax-logo_article_full.png" alt="itax image" height="125" width="300" class="center">
+    </div>
+    
+    <p><strong>All fields marked with * are mandatory</strong></p>
+    <div class="container-verify">
+        <h3>Verify Withholding Certificate</h3>
+        <div class="flex-container-verify">
+            <form action="">
+                <div>
+                    <label for="obligation">Type of Obligation<b>*</b></label>
+                    <select>
+                        <option value="obg0">--Select--</option>
+                        <option value="obg1">IT Withholding</option>
+                        <option value="obg2">VAT Withholding</option>
+                        <option value="obg3">MRI Withholding</option>
+                    </select>
+                </div>
+            </form>
+            <div class="TCCverify">
+                <span id="_pin1">
+                    <form action="">
+                        <label for="pin">Withholder PIN<b>*</b></label>
+                        <input type="text" name="PIN" required>
+                    </form>
+                </span>
+                <span id="_pin2">
+                    <form action="">
+                        <label for="pin">Payee PIN</label>
+                        <input type="text" name="PIN">
+                    </form>
+                </span>
+                
+            </div>
+            <div class="TCCverify1">
+                <span id="_pin3">
+                    <form>
+                        <label for="CertNo.">Withholding Certificate Number</label>
+                        <input type="number" name="certificate" required>
+                    </form>
+                </span>
+                <span id="_pin4">
+                    <form>
+                        <label for="DOC">Date of Certificate</label>
+                        <input type="date" name="date" placeholder="">
+                    </form>
+                </span>
+            </div>
+            <form action="/action_page.php">
+                <div>
+                    <input type="checkbox" id="switch1" name="example">
+                    <label for="switch1">Check me<b>*</b></label> 
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    <div class="buttons">
+        <button class="btn btn-dark">Verify</button>
+        <button class="btn btn-dark">Reset</button>
+        <button class="btn btn-dark">Home</button>
+    </div>
+</body>
+</html>
