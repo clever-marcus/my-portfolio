@@ -1,0 +1,244 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="modalsign.css">
+    <title>Facebook Sign up</title>
+</head>
+<body>
+    
+        <!--Modal content-->
+        <form class="modal-content animate" action="connect.php" method="POST">
+            <div class="container">
+                <h2>Facebook</h2>
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" placeholder="" name="firstname" required>
+
+                <label for="mdname"><b>Middle Name</b></label>
+                <input type="text" placeholder="" name="middlename" required>
+
+                <label for="lname"><b>Last Name</b></label>
+                <input type="text" placeholder="" name="lastname"  required>
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="" name="username" required>
+
+                <div class="span1">
+                    <span>
+                        <label for="DoB"><b>Date of Birth</b></label>
+                        <input type="date" name="date_of_birth" required>
+                    </span>
+                    <span id="gender">
+                        <label for="sex"><b>What is Your Gender?</b></label>
+                        <label for="male" class="radio-inline"><input type="radio" name="gender" value="m" id="male">Male</label>
+                        <label for="female" class="radio-inline"><input type="radio" name="gender" value="f" id="female">female</label>
+                        <label for="others" class="radio-inline"><input type="radio" name="gender" value="o">Others</label>
+                    </span>
+                </div>
+                <div class="span2">
+                    <span>
+                        <label for="country"><b>Which Country Do you come from?</b></label>
+                        <select>
+                            <option value="select">--Select--</option>
+                            <option value="country1">Afghanistan</option>
+                            <option value="country2">Albania</option>
+                            <option value="country3">Algeria</option>
+                            <option value="country4">Angola</option>
+                            <option value="country5">Argentina</option>
+                            <option value="country6">Australia</option>
+                            <option value="country7">Austria</option>
+                            <option value="country8">Bahrain</option>
+                            <option value="country9">Bangladesh</option>
+                            <option value="country10">Barbados</option>
+                            <option value="country11">Belgium</option>
+                            <option value="country12">Benin</option>
+                            <option value="country13">Bermuda</option>
+                            <option value="country14">Bhutan</option>
+                            <option value="country15">Bolivia</option>
+                            <option value="country16">Bosnia</option>
+                            <option value="country17">Botswana</option>
+                            <option value="country18">Brazil</option>
+                            <option value="country19">Brunei</option>
+                            <option value="country20">Bulgaria</option>
+                            <option value="country21">Burma</option>
+                            <option value="country22">Burkina Faso</option>
+                            <option value="country23">Burundi</option>
+                            <option value="country24">Cameroon</option>
+                            <option value="country25">Canada</option>
+                            <option value="country26">Cape Verde</option>
+                            <option value="country27">Cayman Islands</option>
+                            <option value="country28">Central African Republic</option>
+                            <option value="country29">Chad</option>
+                            <option value="country30">Chile</option>
+                            <option value="country31">China</option>
+                            <option value="country32">Colombia</option>
+                            <option value="country33">Comoros</option>
+                            <option value="country34">Congo</option>
+                            <option value="country35">Costa Rica</option>
+                            <option value="country36">Cote D'Ivoire</option>
+                            <option value="country37">Croatia</option>
+                            <option value="country38">Cuba</option>
+                            <option value="country39">Cyprus</option>
+                            <option value="country40">Czech Republic</option>
+                            <option value="country41">Dem. Rep. of Congo</option>
+                            <option value="country42">Denmark</option>
+                            <option value="country43">Djibouti</option>
+                            <option value="country44">Ecuador</option>
+                            <option value="country45">Egypt</option>
+                            <option value="country46">Equatorial Guinea</option>
+                            <option value="country47">Eritrea</option>
+                            <option value="country48">Ethiopia</option>
+                            <option value="country49">Finland</option>
+                            <option value="country50">France</option>
+                            <option value="country51">French Guiana</option>
+                            <option value="country52">Gabon</option>
+                            <option value="country53">Gambia</option>
+                            <option value="country54">Germany</option>
+                            <option value="country55">Ghana</option>
+                            <option value="country56">Greece</option>
+                            <option value="country57">Guinea Rep.</option>
+                            <option value="country58">Guinea Bissau</option>
+                            <option value="country59">Haiti</option>
+                            <option value="country60">Hong Kong</option>
+                            <option value="country61">Hungary</option>
+                            <option value="country62">Iceland</option>
+                            <option value="country63">India</option>
+                            <option value="country64">Indonesia</option>
+                            <option value="country65">Iran</option>
+                            <option value="country66">Iraq</option>
+                            <option value="country67">Irish Republic</option>
+                            <option value="country68">Israel</option>
+                            <option value="country69">Italy</option>
+                            <option value="country70">Jamaica</option>
+                            <option value="country71">Japan</option>
+                            <option value="country72">Jordan</option>
+                            <option value="country73">Kenya</option>
+                            <option value="country74">Korea(North)</option>
+                            <option value="country75">Korea(South</option>
+                            <option value="country76">Kuwait</option>
+                            <option value="country77">Laos</option>
+                            <option value="country78">Lebanon</option>
+                            <option value="country79">Lesotho</option>
+                            <option value="country80">Liberia</option>
+                            <option value="country81">Libya</option>
+                            <option value="country82">Luxembourg</option>
+                            <option value="country83">Macao</option>
+                            <option value="country84">Madagascar</option>
+                            <option value="country85">Malawi</option>
+                            <option value="country86">Malaysia</option>
+                            <option value="country87">Maldives</option>
+                            <option value="country88">Mali</option>
+                            <option value="country89">Mauritania</option>
+                            <option value="country90">Mauritius</option>
+                            <option value="country91">Mexico</option>
+                            <option value="country92">Monaco</option>
+                            <option value="country93">Morocco</option>
+                            <option value="country94">Mozambique</option>
+                            <option value="country95">Namibia</option>
+                            <option value="country96">Nepal</option>
+                            <option value="country97">Netherlands</option>
+                            <option value="country98">Netherlands Antillies</option>
+                            <option value="country99">New Caledonia</option>
+                            <option value="country100">New Hebrides</option>
+                            <option value="country101">New Zealand</option>
+                            <option value="country102">Niger</option>
+                            <option value="country103">Nigeria</option>
+                            <option value="country104">Norway</option>
+                            <option value="country105">Oman</option>
+                            <option value="country106">Pakistan</option>
+                            <option value="country107">Panama</option>
+                            <option value="country108">Papua New Guinea</option>
+                            <option value="country109">Paraguay</option>
+                            <option value="country110">Peru</option>
+                            <option value="country111">Philippines</option>
+                            <option value="country112">Poland</option>
+                            <option value="country113">Portugal</option>
+                            <option value="country114">Puerto Rico</option>
+                            <option value="country115">Qatar</option>
+                            <option value="country116">Reunion Isle</option>
+                            <option value="country117">Romania</option>
+                            <option value="country118">Russian Fed.</option>
+                            <option value="country119">Rwanda</option>
+                            <option value="country120">Sao Tome & Principe</option>
+                            <option value="country121">Saudi Arabia</option>
+                            <option value="country122">Seychelles</option>
+                            <option value="country123">Sierra Leone</option>
+                            <option value="country124">Senegal</option>
+                            <option value="country125">Singapore</option>
+                            <option value="country126">Slovenia</option>
+                            <option value="country127">Somalia</option>
+                            <option value="country128">South Africa</option>
+                            <option value="country129">Spain</option>
+                            <option value="country130">Sri Lanka</option>
+                            <option value="country131">Sudan</option>
+                            <option value="country132">Suriname</option>
+                            <option value="country133">Swaziland</option>
+                            <option value="country134">Sweden</option>
+                            <option value="country135">Switzerland</option>
+                            <option value="country136">Syria</option>
+                            <option value="country137">Tahiti</option>
+                            <option value="country138">Taiwan</option>
+                            <option value="country139">Tanzania</option>
+                            <option value="country140">Thailand</option>
+                            <option value="country141">Togo</option>
+                            <option value="country142">Tonga</option>
+                            <option value="country143">Tunisia</option>
+                            <option value="country144">Turkey</option>
+                            <option value="country145">Uganda</option>
+                            <option value="country146">Ukraine</option>
+                            <option value="country147">United Arab Emirates</option>
+                            <option value="country148">United Kingdom</option>
+                            <option value="country149">Upper Volta</option>
+                            <option value="country150">Uruguay</option>
+                            <option value="country151">USA</option>
+                            <option value="country152">Venezuela</option>
+                            <option value="country153">Yemen-Aden (PDR)</option>
+                            <option value="country154">Yemen Arab Republic</option>
+                            <option value="country155">Vietnam</option>
+                            <option value="country156">Yugoslavia</option>
+                            <option value="country157">Zambia</option>
+                            <option value="country158">Zimbabwe</option>
+                        </select>
+                    </span>
+                    
+                </div>
+                <span id="number">
+                    <label for="phone_number"><b>Phone Number</b></label>
+                <input type="number" placeholder="(country code e.g +1...)" name="phonenumber" required>
+                </span>
+                <div><label for="email"><b>Email Address</b></label></div>
+                
+                <div class="input-group mb-3">
+                    
+                    <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text">@example.com</span>
+                    </div>
+                </div>
+                <div>
+                    <label for="psw"><b>Create Password</b></label>
+                    <input type="password" placeholder="" name="password" required>
+                </div>
+                
+
+                <label for="psw-repeat"><b>Confirm Password</b></label>
+                <input type="password" placeholder="" name="passwordRepeat" required>
+                <input type="checkbox" name="check">  <b>Check me</b>
+
+                <div class="buttons">
+                    <span id="button1">
+                        <button type="submit" class="btn btn-primary" id="signupbtn">Create Account</button>
+                    </span>
+                    <span id="button2">
+                        <button type="button" class="btn btn-danger" id="cancelbtn">Cancel</button>
+                    </span>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script src="modalsignup.js"></script>
+</body>
+</html>
