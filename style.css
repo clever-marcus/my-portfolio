@@ -1,577 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 
-/*:root{
-    red:#e84118;
-}*/
-
-*{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0; padding: 0;
+*
+{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    text-transform: capitalize;
-    transition: all .2s cubic-bezier(.37,1.14,.26,1.24);
-}
-*::selection{
-    background: #e84118;
-    color: #fff;
-}
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-}
-.btn{
-    font-size: 2rem;
-    color: black;
-}
-.btn:hover{
-    transform: scale(1.1);
-    background-color: #e84118;
-    outline-offset: 0.4rem;
-    
-}
-.heading{
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 .5rem;
-    padding-top: 6rem;
-    box-shadow: 0 .2rem .05rem rgba(0,0,0,.3);
-}
-.heading span{
-    display: inline-block;
-    font-size: 3.5rem;
-    color: #e84118;
-    padding: 1rem 0;
-    box-shadow: 0 .2rem .05rem #e84118;
+    font-family:'Poppins', sans-serif;
 }
 
-header .header-1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #fff;
-    padding: 1rem 2rem;
+body{
+    min-height: 100vh;
+    background: #fff;
 }
-header .header-1 .logo{
-    font-size: 2.5rem;
-    color: #e84118;
-}
-header .header-1 .call{
-    font-size: 2rem;
-    color: #666;
-}
-header .header-2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background: #e84118;
-    position: relative;
-    z-index: 1000;
-}
-header .header-2 .navbar ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-}
-header .header-2 .navbar ul li{
-    margin: 1rem;
-}
-header .header-2 .navbar ul li a{
-    font-size: 2rem;
-    color: #fff;
-    margin: 1rem;
-}
-
-header .header-2 .navbar ul li a.active,
-header .header-2 .navbar ul li a:hover{
-    color: #ff0;
-}
-
-header .header-2 .share a{
-    font-size: 2rem;
-    color: #fff;
-    margin: 1rem;
-}
-header .header-2 .share a:hover{
-    color: #ff0;
-}
-header .header-2 #menu{
-    font-size: 3rem;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    margin: 1rem;
-}
-header .header-2.header-active{
+.navigation{
     position: fixed;
-    top: 0; left: 0;
-    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
-}
-
-.home{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: url('pizza\ art.jpg')no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-.home .content{
-    text-align: center;
-    padding: 1rem;
-}
-.home .content h1 {
-    font-size: 6rem;
-    color: #fff;
-}
-.home .content h1 span{
-    color: #e84118;
-}
-.home .content p{
-    font-size: 2rem;
-    color: #fff;
-    width: 68rem;
-    padding: 1rem 0;
-}
-.home .shape{
-    position: absolute;
-    bottom: -0.5rem; left: 0;
-    height: 13rem;
-    background: url();
-    background-size: 350rem 13rem;
-    width: 100%;
-    animation: animate 25s linear infinite;
-}
-@keyframes animate{
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-y: 350rem;
-    }
-}
-.about{
-    min-height: 100vh;
-}
-.about .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 2rem;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 70px;
+    border-radius: 10px;
+    box-sizing: initial;
+    border-left: 5px solid #4d5bf9;
+    background: #4d5bf9;
+    transition: 0.5s;
     overflow-x: hidden;
 }
-.about .row .image img{
-    font-size: 30rem;
-    filter: drop-shadow(.5rem .5rem .5rem rgba(0,0,0,.3));
+.navigation.active{
+    width: 300px;
 }
-.about .row .content{
-    padding: 1rem;
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
 }
-.about .row .content h3{
-    font-size: 3.5rem;
-    color: #e84118;
-}
-.about .row .content p{
-    font-size: 2rem;
-    color: #666;
-    padding: 1rem 0;
-}
-.about .row .content .btn{
-    border-color: #e84118;
-    outline-color: #e84118;
-    color: #e84118;
-}
-.about .row .content .btn:hover{
-    color: #fff;
-}
-.dish{
-    min-height: 100vh;
-}
-.dish .controls{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
+.navigation ul li{
+    position: relative;
     list-style: none;
-}
-.dish .controls .buttons{
-    margin: 1rem 2rem;
-    padding: .5rem 0;
-    border-bottom: .2rem solid #333;
-    color: #333;
-    cursor: pointer;
-    font-size: 2rem;
-}
-.dish .controls .buttons.button-active,
-.dish .controls .buttons:hover{
-    color: #e84118;
-    border-color: #e84118;
-}
-.dish .image-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 2rem;
-}
-.dish .image-container .image{
-    width: 35rem;
-    margin: 2rem;
-    border: 1rem solid #fff;
-    box-shadow: 0 .5rem .5rem rgba(0,0,0,.3);
-}
-.dish .image-container .image img{
-    height: 20rem;
     width: 100%;
-    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-.dish .image-container .image a{
-    font-size: 2rem;
-    color: #333;
-    padding: .5rem;
+
+.navigation ul li.active{
+    background: #fff;
 }
-.dish .image-container .image a:hover{
-    color: #e84118;
-    text-decoration: underline;
-}
-.chef{
-    min-height: 100vh;
-    background: url('spices.jpg')no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.chef .heading span{
-    color: #000;
-}
-.chef .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-}
-.chef .box-container .box{
-    height: 40rem;
-    width: 28rem;
-    margin: 2rem;
-    border: .5rem solid #e84118;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
-    position: relative;
-    overflow: hidden;
-}
-.chef .box-container .box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.chef .box-container .box .info{
+.navigation ul li b:nth-child(1){
     position: absolute;
-    bottom: -6rem; left: 0;
+    top: -20px;
+    height: 20px;
     width: 100%;
     background: #fff;
-    border-top: .5rem solid #e84118;
-    text-align: center;
+    display: none;
 }
-.chef .box-container .box:hover .info{
-    bottom: 0rem;
-}
-
-.chef .box-container .box .info h3{
-    font-size: 2rem;
-    color: #333;
-    padding: .5rem 0;
-}
-.chef .box-container .box .info span{
-    font-size: 1.5rem;
-    color: #666;
-}
-.chef .box-container .box .info .share{
-    margin-top: 1rem;
-    border-top: 1rem solid rgba(0,0,0,.3);
-    padding: 1rem 0;
-}
-.chef .box-container .box .info .share a{
-    font-size: 2rem;
-    margin: 1rem;
-    color: #e84118;
-}
-.chef .box-container .box .info .share a:hover{
-    color: #333;
-}
-.speciality .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-}
-.speciality .box-container .box{
-    height: 20rem;
-    flex: 1 1 43rem;
-    margin: 1rem;
-    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
-    border-radius: 1rem;
-    overflow: hidden;
-    position: relative;
-}
-.speciality, .box-container .box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.speciality .box-container .box .info{
+.navigation ul li b:nth-child(1):before{
+    content: '';
     position: absolute;
-    top: 50%; left: 5%;
-    transform: translateY(-50%);
-}
-.speciality .box-container .box .info h3{
-    font-size: 3rem;
-    color: #fff;
-}
-.speciality .box-container .box .info p{
-    font-size: 2rem;
-    color: #eee;
-}
-.speciality .icons-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 3rem;
-}
-.speciality .icons-container .icons{
-    margin: 2rem;
-    width: 29rem;
-    text-align: center;
-}
-.speciality .icons-container .icons i{
-    font-size: 4rem;
-    color: #e84118;
-}
-.speciality .icons-container .icons h3{
-    font-size: 2rem;
-    color: #333;
-    padding: 1rem 0;
-}
-.speciality .icons-container .icons p{
-    font-size: 1.5rem;
-    color: #666;
-}
-.newsletter{
-    padding: 2rem 1rem;
-    text-align: center;
-}
-.newsletter h1{
-    font-size: 4rem;
-    color: #333;
-}
-.newsletter p{
-    font-size: 2rem;
-    color: #333;
-}
-.newsletter form{
-    margin: 1rem auto;
-    padding: .5rem 1rem;
-    max-width: 60rem;
-    border-radius: 5rem;
-    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
-    display: flex;
-    align-items: center;
-    background: #fff;
-}
-
-.newsletter form input[type="email"]{
-    height: 4rem;
-    padding: 0 1rem;
+    top: 0;
+    left: 0;
     width: 100%;
-    font-size: 1.7rem;
-    background: none;
-    border: none;
-    color: #333;
-}
-.newsletter form input[type="submit"]{
-    height: 3.8rem;
-    width: 17rem;
-    font-size: 1.7rem;
-    background: #e84118;
-    border: none;
-    outline: none;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5rem;
-}
-.newsletter form input[type="submit"]:hover{
-    letter-spacing: .1rem;
-    opacity: .8;
-}
-.order .heading{
-    padding-top: 200px;
-}
-.order .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-    overflow: hidden;
-    box-shadow: 0 .5rem 1rem rgba(177, 65, 65, 0.3);
-}
-.order .row .mapouter{
-    flex: 1 1 60%;
-}
-.order .row .image .mapouter{
     height: 100%;
-    width: 100%;
-    object-fit: cover;
+    border-bottom-right-radius: 20px;
+    background: #4d5bf9;
 }
-.order .row form{
-    flex: 1 1 40%;
+.navigation ul li b:nth-child(2){
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
     background: #fff;
-    padding: 2rem;
+    display: none;
 }
-.order .row form .box{
-    padding: 1rem;
-    margin: 1rem 0;
-    font-size: 1.5rem;
-    color: #333;
-    text-transform: none;
-    background: #f0f0f0;
+.navigation ul li b:nth-child(2):before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    background: #4d5bf9;
 }
-.order .row form .box::placeholder{
-    text-transform: capitalize;
-}
-.order .row form .box-address{
-    resize: none;
-    height: 15rem;
-}
-.footer{
-    background: #2c3e50;
-}
-.footer .box-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.footer .box-container .box{
-    flex: 1 1 23rem;
-    margin: 2rem;
-}
-.footer .box-container .box .heading{
-    margin: 0; padding: 0;
-    box-shadow: 0 .2rem .05rem #fff6;
-    margin-bottom: .5rem;
-    text-align: left;
-}
-.footer .box-container .box .heading span{
-    font-size: 2.5rem;
-    color: #fff;
-}
-.footer .box-container .box p{
-    font-size: 1.7rem;
-    color: #eee;
-    padding: 1rem 0;
-}
-.footer .box-container .box:first-child p{
-    font-size: 1.4rem;
-
-}
-.footer .box-container .box p i{
-    padding: 0 .5rem;
-    color: #fff;
-}
-.footer .box-container .box a{
-    font-size: 1.7rem;
+.navigation ul li.active b:nth-child(1),
+.navigation ul li.active b:nth-child(2){
     display: block;
-    padding: .5rem 0;
-    color: #eee;
 }
-.footer .box-container .box a:hover{
-    text-decoration: underline;
-}
-.footer .credit{
-    font-size: 2rem;
-    text-align: center;
-    padding: 2rem 1rem;
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
     color: #fff;
-    border-top: .1rem solid rgba(255,255,255,.3);
 }
-.footer .credit span{
-    color: #e84118;
+.navigation ul li.active a{
+    color: #333;
 }
-
-
-
-
-/*media queries*/
-@media (max-width:768px){
-
-    html{
-        font-size: 55%;
-    }
-
-    header .header-2 #menu{
-        display: block;
-    }
-    header .header-2 .navbar{
-        position: absolute;
-        top: 100%; left: -120%;
-    }
-    header .header-2 .navbar ul{
-        flex-flow: column;
-        justify-content: center;
-        min-height: calc(100vh - 6rem);
-        padding-bottom: 6rem;
-        background: #000;
-        width: 32rem;
-    }
-    header .header-2 .navbar ul li{
-        width: 100%;
-        text-align: center;
-    }
-    header .header-2 .navbar ul li a{
-        font-size: 2.7rem;
-        display: block;
-    }
-    header .header-2 .fa-times{
-        transform: rotate(180deg);
-    }
-    header .header-2 .nav-toggle{
-        left: 0;
-    }
-    .home .content h1{
-        font-size: 5rem;
-    }
-    .home .content p{
-        width: auto;
-    }
-    .about .row{
-        flex-flow: column;
-    }
-    .about .row .image img{
-        width: 85%;
-    }
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
 }
-@media (max-width: 400px){
-    html{
-        font-size: 50%;
-    } 
-    header .header-1{
-        flex-flow: column;
-    }
-    header .header-1 .logo{
-        padding-bottom: 1rem;
-    }
-    header .header-2 .navbar ul{
-        width: 100vw;
-    }
+.navigation ul li a .icon ion-icon{
+    font-size: 1.5em;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+.toggle{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #4d5bf9;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle.active{
+    background: #ff4d89;
+}
+.toggle ion-icon{
+    position: absolute;
+    color: #fff;
+    font-size: 34px;
+    display: none;
+}
+.toggle ion-icon.open,
+.toggle.active ion-icon.close
+{
+    display: block;
+}
+.toggle ion-icon.close,
+.toggle.active ion-icon.open{
+    display: none;
 }
